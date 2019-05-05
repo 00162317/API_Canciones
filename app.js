@@ -12,7 +12,7 @@ const mongoose = require('mongoose');
 
 mongoose.Promise=global.Promise;
 
-mongoose.connect("mongodb+srv://00162317:robi@cluster0-vjnbm.mongodb.net/cancionMongo?retryWrites=true",{useNewUrlParser:true}).then(()=>{
+mongoose.connect("mongodb://robi:roberto1@ds153669.mlab.com:53669/cancionmongo",{useNewUrlParser:true}).then(()=>{
   console.log("Base de datos conectada");
 }).catch((err)=>{
   console.log(err,"No se puede conectar a la base");
